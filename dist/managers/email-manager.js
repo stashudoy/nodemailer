@@ -9,17 +9,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.emailRouter = void 0;
-const express_1 = require("express");
+exports.emailManager = void 0;
 const email_adapter_1 = require("../adapters/email-adapter");
-exports.emailRouter = (0, express_1.Router)({});
-exports.emailRouter
-    .post('/send', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    yield email_adapter_1.emailAdapter.sendEmail(req.body.email, req.body.subject, req.body.message);
-    // await businessService.do()
-    res.send({
-        "email": req.body.email,
-        "message": req.body.message,
-        "subject": req.body.subject
-    });
-}));
+exports.emailManager = {
+    sendEmailRecoveryMessage(user) {
+        return __awaiter(this, void 0, void 0, function* () {
+            //save repo
+            // get user from repo
+            yield email_adapter_1.emailAdapter.sendEmail("user.email", "password_recovery", "<div>message: your pass or link</div>");
+        });
+    }
+};

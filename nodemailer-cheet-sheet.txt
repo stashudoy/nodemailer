@@ -40,3 +40,7 @@ yarn add nodemailer
 yarn add @types/nodemailer
 
 
+// BLL - бизнес логика контролирует правильность данных
+
+// transaction scripts - типа делегирование ф-ий в другие слои
+
