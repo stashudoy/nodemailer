@@ -21,7 +21,7 @@ exports.emailAdapter = {
                 service: 'gmail',
                 auth: {
                     user: "zadkovars@gmail.com",
-                    pass: "vzgz nqgp ekfk buvv ",
+                    pass: "XXXXX",
                 },
             });
             let info = yield transport.sendMail({
