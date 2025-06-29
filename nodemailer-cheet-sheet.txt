@@ -1,0 +1,42 @@
+yarn add cors
+yarn add @types/cors
+yarn add nodemailer 
+yarn add @types/nodemailer
+
+CORS 
+=====
+
+ yarn add cors
+ yarn add @types/cors
+
+
+ import cors from 'cors'
+
+ const corsMiddleware = cors()
+ app.use(corsMiddleware)
+
+
+
+bodyParser 
+==============
+
+import bodyParser from 'body-parser'
+
+const jsonBodyMiddleware = bodyParser.json()
+app.use(jsonBodyMiddleware)
+
+
+
+ nodemailer
+ ============
+
+ npmjs.com/package/nodemailer
+ https://nodemailer.com/usage/using-gmail
+ https://nodemailer.com/about/
+
+//smptp - протокол для отправки писем, nodemailer - пакет nodejs для работы с smptp
+
+yarn add nodemailer 
+yarn add @types/nodemailer
+
+

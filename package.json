@@ -5,11 +5,16 @@
   "license": "MIT",
   "dependencies": {
     "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.19",
     "@types/jsonwebtoken": "^9.0.10",
+    "@types/nodemailer": "^6.4.17",
     "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
     "express": "^5.1.0",
+    "express-validator": "^7.2.1",
     "jsonwebtoken": "^9.0.2",
-    "mongodb": "^6.17.0"
+    "mongodb": "^6.17.0",
+    "nodemailer": "^7.0.3"
   },
   "scripts": {
     "watch": "tsc -w",
